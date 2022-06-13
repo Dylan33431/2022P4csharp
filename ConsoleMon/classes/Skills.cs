@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleMon
 {
+    
     internal class Skill
     {
         string name = "Zap Cannon";
         float damage = 120;
         float energyCost = 60;
-
+        Element element = Element.electro;
         public void UseOn(ConsoleMon target, ConsoleMon caster)
         {
             target.TakeDamage(120);

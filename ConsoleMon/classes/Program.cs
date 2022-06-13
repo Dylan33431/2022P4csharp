@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleMon
 {
-
+    internal enum Element
+    {
+        Fire,
+        water,
+        grass,
+        electro
+    }
     internal class ConsoleMon
     {
         string name = "Xuritree";
         int Health = 70;
         int Energy = 60;
-
+        Element weakness = Element.water;
 
         public void TakeDamage(int Damage)
         {
